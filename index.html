@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWINGSTARS HOSPITAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <h2>SWINGSTARS HOSPITAL</h2>
+
+        <nav class="navbar">
+            <div>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#appointments">Appointments</a>
+            <a href="#contact">Contact Us</a>
+            <a href="Login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+    <div>
+        <marquee behavior="scroll" direction="left"><h1>Welcome to Swingstars Hospital</h1></marquee>
+        <p>YOUR HEALTH, IS OUR PRIORITY</p>
+        <button onclick="showMessage()">Learn More</button>
+    </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <p>Swingstars Hospital is commited to providing quality healthchare services and caring for our patients.
+            Our Team focuses on timely consultations, emergency response , organized patient support.
+            We aim to deliver reliable medical care in a welcoming and and dependable environnment.
+            We continously work to keep careclear and accessible for everyone who walks through our doors.
+            Ever visit is handled with respect, clarity, and attention to individual needs. 
+        </p>
+    </section>
+
+    <section class="services" id="services">
+        <h1>Our Services</h1>
+
+        <div class="service-container">
+
+        <div class="service">
+            <h3>General Consultation</h3>
+            <p>Medical consultations and patient care.
+                Our doctors listen carefully, diagnose clearly , and guide you on next steps.
+                We help track your health progress and answer questions in plain terms.
+                Follow-up advice is provided so you feel supported after every visit.
+                Patients can book routine appointment without unnecessary delays.
+            </p>
+        </div>
+         
+        <div class="service">
+            <h3>Emergency Care</h3>
+            <p>Medical Assistance for emergencies.
+                Prompt medical attention for urgent injuries and sudden health concerns when time matters most.
+                Our team works quickly to stabilize patients and provide immediate care.
+                Clear communication keeps families informed throughout urgent situation.
+                We focus on fast response and safe intial treatment.
+                Urgent cases are prioritized so critical needs are adressed the right away.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Patient Adnissions</h3>
+            <p>Hospital admission and patient management
+                Smooth inpatient admission, room coordination, and structured care throughout your stay.
+                We keep admission steps clear and supportive for both partients and families.
+                Staff coordinate daily routines so recovery stays organized and steady.
+                Discharge information is shared clearly before you go home.
+                Every stage of admission is handled with care  and attention to detail.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section class="appointments" id="appointments">
+        <div>
+            <h1>Book an Appointment</h1>
+            <p>Schedule a visit with our doctors.</p>
+
+            <form class="appointmentForm" placeholder="appointmentForm" id="appointmentForm">
+                <label>Patient ID:</label>
+                <br>
+                <input type="text" id="patientID" placeholder="Your Patient ID" required>
+                <br>
+                <label>Doctor ID:</label>
+                <br>
+                <input type="number" id="doctorID" placeholder="Enter Doctor ID" required>
+                <br>
+                <label>Appointment Time:</label>
+                <br>
+                <input type="time" id="appointmentTime" required>
+                <br>
+                <label>Reason:</label>
+                <br>
+                <input type="text" id="reason" placeholder="Reason for appointment" required>
+                <br>
+                <label>Patient Name:</label>
+                <br>
+                <input type="text" id="patient name" placeholder="Your Name">
+                <br>
+                <label>Department:</label>
+                <br>
+
+                <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="General Consultation">General Consultation</option>
+                <option value="Emergency Care">Emergency Care</option>
+                <option value="Patient Admissions">Patient Admissions</option>
+                </select>
+                <br>
+                <label>Date: </label>
+                <br>
+                <input type="text" id="appointmentDate" required>
+                <br>
+                <button type="button" onclick="validateAppointment()">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Swingstars Hospital</p>
+
+        <form class="contactForm" id="contactForm">
+            <label>Name:</label>
+            <br>
+            <input type="text" id="patientName" placeholder="Your Name" required>
+            <br>
+            <label>Email:</label>
+            <br>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <br>
+            <button type="button" onclick="validate()">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>2026 Swingstars Hospital. All Rights Reserved</p>
+        <p>designed by Thato Chapatso</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

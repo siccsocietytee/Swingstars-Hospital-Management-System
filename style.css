@@ -1,0 +1,296 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: teal;
+    border: 2px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: teal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    color: teal;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: teal;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.header h2 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.navbar div {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 40px;
+}
+
+.home {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 90px 30px;
+    margin-bottom: 24px;
+}
+
+.home h1 {
+    margin: 0px 0px 12px 0px;
+    font-size: 36px;
+}
+
+.home p {
+    margin: 0px 0px 20px 0px;
+    font-size: 18px;
+}
+
+.home marquee {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.home button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: white;
+    color: teal;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.about {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    border: 1px solid teal;
+    border-radius: 10px;
+    margin: 0px 40px 24px 40px;
+}
+
+.about h1 {
+    margin: 0px 0px 15px 0px;
+    font-size: 30px;
+    color: teal;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+
+.services {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    border: 1px solid teal;
+    border-radius: 10px;
+    margin: 0px 40px 24px 40px;
+}
+
+.services h1 {
+    margin: 0px 0px 25px 0px;
+    font-size: 30px;
+    color: teal;
+}
+
+.service-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service h3 {
+    margin: 0px 0px 10px 0px;
+    color: teal;
+}
+
+.service p {
+    margin: 0px;
+}
+
+.appointments {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    border: 1px solid teal;
+    border-radius: 10px;
+    margin: 0px 40px 24px 40px;
+}
+
+.appointments h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 30px;
+    color: teal;
+}
+
+.appointments p {
+    margin: 0px 0px 20px 0px;
+}
+
+.appointmentForm {
+    max-width: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.appointmentForm input,
+.appointmentForm select {
+    padding: 12px;
+    font-size: 15px;
+    color: teal;
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 6px;
+}
+
+.appointmentForm button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    border: 1px solid teal;
+    border-radius: 10px;
+    margin: 0px 40px 24px 40px;
+}
+
+.contact h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 30px;
+    color: teal;
+}
+
+.contact p {
+    margin: 0px 0px 20px 0px;
+}
+
+.contactForm {
+    max-width: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contactForm input {
+    padding: 12px;
+    font-size: 15px;
+    color: teal;
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 6px;
+}
+
+.contactForm button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+    }
+
+    .navbar div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 45px 20px;
+    }
+
+    .about,
+    .services,
+    .appointments,
+    .contact {
+        margin: 0px 20px 20px 20px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
